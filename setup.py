@@ -7,11 +7,11 @@ def read_file(fname):
 
 
 setup(
-    name='pytest-testrail',
+    name='pytest-tr-plugin',
     description='pytest plugin for creating TestRail runs and adding results',
     long_description=read_file('README.rst'),
     version='1.0.0',
-    author='Allan Kilpatrick',
+    author='Vivek Singh',
     author_email='vs.bhadauriya@live.com',
     url='http://github.com/II-VSB-II/pytest-testrail/',
     packages=[
