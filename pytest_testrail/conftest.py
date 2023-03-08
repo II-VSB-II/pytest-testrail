@@ -126,7 +126,7 @@ def pytest_configure(config):
                            config_manager.getoption('tr-email', 'email', 'API'),
                            config_manager.getoption('tr-password', 'password', 'API'),
                            timeout=config_manager.getoption('tr-timeout', 'timeout', 'API'))
-        run_id = config_manager.getoption('tr-run-id', 'plan_id', 'TESTRUN')
+        run_id = config_manager.getoption('tr-run-id', 'run_id', 'TESTRUN')
         config.pluginmanager.register(
             PyTestRailPlugin(
                 client=client,
@@ -139,7 +139,6 @@ def pytest_configure(config):
                                                     default=True),
                 tr_name=config_manager.getoption('tr-testrun-name', 'name', 'TESTRUN'),
                 tr_description=config_manager.getoption('tr-testrun-description', 'description', 'TESTRUN'),
-                run_id=config.getoption('--tr-run-id'),
                 run_id=0 if run_id is None else run_id,
                 plan_id=config_manager.getoption('tr-plan-id', 'plan_id', 'TESTRUN'),
                 version=config.getoption('--tr-version'),
