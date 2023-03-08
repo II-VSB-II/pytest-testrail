@@ -9,7 +9,6 @@ def read_file(fname):
 setup(
     name='pytest-tr-plugin',
     description='pytest plugin for creating TestRail runs and adding results',
-    long_description_content_type=read_file('README.rst'),
     version='1.0.0',
     author='Vivek Singh',
     author_email='vs.bhadauriya@live.com',
