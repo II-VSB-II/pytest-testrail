@@ -12,6 +12,7 @@ setup(
     version='1.0.0',
     author='Vivek Singh',
     author_email='vs.bhadauriya@live.com',
+    long_description=open('README.rst').read(),
     url='http://github.com/II-VSB-II/pytest-testrail/',
     packages=[
         'pytest_testrail',
