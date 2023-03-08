@@ -7,7 +7,7 @@ def read_file(fname):
 
 
 setup(
-    name='testtrail-pytest',
+    name='testrail-pytest',
     description='pytest plugin for creating TestRail runs and adding results',
     version='1.0.0',
     author='Vivek Singh',
