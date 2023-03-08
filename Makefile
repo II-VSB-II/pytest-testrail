@@ -41,5 +41,5 @@ requirements: .requirements.txt
 	pip install -r requirements/base.txt
 	pip freeze > $@
 
-test: coverage lint
+test: lint
 	tox
